@@ -1,0 +1,463 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "account",
+            "base": "",
+            "fields": [
+                {
+                    "name": "balance",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "burn",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "close",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "symbol",
+                    "type": "symbol"
+                }
+            ]
+        },
+        {
+            "name": "create",
+            "base": "",
+            "fields": [
+                {
+                    "name": "issuer",
+                    "type": "name"
+                },
+                {
+                    "name": "maximum_supply",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "currency_stats",
+            "base": "",
+            "fields": [
+                {
+                    "name": "supply",
+                    "type": "asset"
+                },
+                {
+                    "name": "max_supply",
+                    "type": "asset"
+                },
+                {
+                    "name": "issuer",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "exemptadd",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "reason",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "exemptdel",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "exemptlock",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "exemptunlock",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "feeapply",
+            "base": "",
+            "fields": [
+                {
+                    "name": "token_symbol",
+                    "type": "symbol"
+                }
+            ]
+        },
+        {
+            "name": "feecancel",
+            "base": "",
+            "fields": [
+                {
+                    "name": "token_symbol",
+                    "type": "symbol"
+                }
+            ]
+        },
+        {
+            "name": "feeconfig",
+            "base": "",
+            "fields": [
+                {
+                    "name": "token_symbol",
+                    "type": "symbol"
+                },
+                {
+                    "name": "transfer_fee_bps",
+                    "type": "uint16"
+                },
+                {
+                    "name": "pending_fee_bps",
+                    "type": "uint16"
+                },
+                {
+                    "name": "pending_at",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "activated",
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "feeexempt",
+            "base": "",
+            "fields": [
+                {
+                    "name": "account",
+                    "type": "name"
+                },
+                {
+                    "name": "reason",
+                    "type": "string"
+                },
+                {
+                    "name": "locked",
+                    "type": "bool"
+                }
+            ]
+        },
+        {
+            "name": "issue",
+            "base": "",
+            "fields": [
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "logburn",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "fee",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "open",
+            "base": "",
+            "fields": [
+                {
+                    "name": "owner",
+                    "type": "name"
+                },
+                {
+                    "name": "symbol",
+                    "type": "symbol"
+                },
+                {
+                    "name": "ram_payer",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "retire",
+            "base": "",
+            "fields": [
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        },
+        {
+            "name": "setfee",
+            "base": "",
+            "fields": [
+                {
+                    "name": "token_symbol",
+                    "type": "symbol"
+                },
+                {
+                    "name": "transfer_fee_bps",
+                    "type": "uint16"
+                }
+            ]
+        },
+        {
+            "name": "setissuer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "token_symbol",
+                    "type": "symbol"
+                },
+                {
+                    "name": "new_issuer",
+                    "type": "name"
+                }
+            ]
+        },
+        {
+            "name": "transfer",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "to",
+                    "type": "name"
+                },
+                {
+                    "name": "quantity",
+                    "type": "asset"
+                },
+                {
+                    "name": "memo",
+                    "type": "string"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "burn",
+            "type": "burn",
+            "ricardian_contract": "Permanently destroy {{quantity}} from the signer's own balance, reducing circulating supply. {{user_authority}} {{irreversible_destruction}}"
+        },
+        {
+            "name": "close",
+            "type": "close",
+            "ricardian_contract": "Delete the signer's zero balance row and reclaim its RAM. {{user_authority}}"
+        },
+        {
+            "name": "create",
+            "type": "create",
+            "ricardian_contract": "Register the token symbol and fix its permanent maximum supply. {{issuer_authority}} {{supply_finality}}"
+        },
+        {
+            "name": "exemptadd",
+            "type": "exemptadd",
+            "ricardian_contract": "Excuse an account from the transfer fee in both directions. {{issuer_authority}} {{fee_policy}}"
+        },
+        {
+            "name": "exemptdel",
+            "type": "exemptdel",
+            "ricardian_contract": "Remove an account's transfer-fee exemption. {{issuer_authority}} {{fee_policy}}"
+        },
+        {
+            "name": "exemptlock",
+            "type": "exemptlock",
+            "ricardian_contract": "Mark a fee exemption as load-bearing, so it cannot be removed while a fee is in force. {{issuer_authority}} {{exemption_lock}}"
+        },
+        {
+            "name": "exemptunlock",
+            "type": "exemptunlock",
+            "ricardian_contract": "Release a load-bearing fee exemption. Permitted only while every transfer fee is set to zero. {{issuer_authority}} {{exemption_lock}}"
+        },
+        {
+            "name": "feeapply",
+            "type": "feeapply",
+            "ricardian_contract": "Put a previously announced fee increase into effect after its notice period has elapsed. {{issuer_authority}} {{fee_policy}}"
+        },
+        {
+            "name": "feecancel",
+            "type": "feecancel",
+            "ricardian_contract": "Abandon an announced fee increase before it takes effect. {{issuer_authority}}"
+        },
+        {
+            "name": "issue",
+            "type": "issue",
+            "ricardian_contract": "Mint new tokens into the issuer balance, up to the maximum supply. {{issuer_authority}} {{supply_finality}}"
+        },
+        {
+            "name": "logburn",
+            "type": "logburn",
+            "ricardian_contract": "Record that a transfer fee of {{fee}} was destroyed. {{receipt_only}}"
+        },
+        {
+            "name": "open",
+            "type": "open",
+            "ricardian_contract": "Create a zero balance row for an account, paid for by the signing RAM payer. {{user_authority}}"
+        },
+        {
+            "name": "retire",
+            "type": "retire",
+            "ricardian_contract": "Permanently destroy tokens held by the issuer, reducing circulating supply. {{issuer_authority}} {{irreversible_destruction}}"
+        },
+        {
+            "name": "setfee",
+            "type": "setfee",
+            "ricardian_contract": "Set the burned transfer fee rate for this symbol. A reduction takes effect at once; an increase is announced and takes effect only after the published notice period. {{issuer_authority}} {{fee_policy}}"
+        },
+        {
+            "name": "setissuer",
+            "type": "setissuer",
+            "ricardian_contract": "Transfer the authority to mint and retire this token to {{new_issuer}}. {{dual_authority}}"
+        },
+        {
+            "name": "transfer",
+            "type": "transfer",
+            "ricardian_contract": "Transfer {{quantity}} from {{from}} to {{to}}. {{user_authority}} {{transfer_fee}} {{memo_visibility}}"
+        }
+    ],
+    "tables": [
+        {
+            "name": "accounts",
+            "type": "account",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "feeconfig",
+            "type": "feeconfig",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "feeexempt",
+            "type": "feeexempt",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        },
+        {
+            "name": "stat",
+            "type": "currency_stats",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "ricardian_clauses": [
+        {
+            "id": "user_authority",
+            "body": "The signer authorizes only the state transition described by this action and acknowledges that blockchain transactions are public and irreversible."
+        },
+        {
+            "id": "issuer_authority",
+            "body": "This action is restricted to the contract account or the account recorded as the token issuer. The issuer is responsible for the token's monetary policy and for validating supply and fee values before signing."
+        },
+        {
+            "id": "dual_authority",
+            "body": "This action requires two independent signatures: the account currently recorded as issuer, and the contract account itself. Neither key alone can move the authority to mint or retire this token. The signers accept that after this action the previous issuer permanently loses that authority."
+        },
+        {
+            "id": "supply_finality",
+            "body": "The maximum supply is fixed when the symbol is created and cannot be raised by any action in this contract. Tokens issued within that ceiling enter circulation immediately."
+        },
+        {
+            "id": "irreversible_destruction",
+            "body": "Tokens destroyed by this action are removed from circulating supply and cannot be recovered. The maximum supply is unchanged, so the destroyed amount may be issued again by the issuer at a later time."
+        },
+        {
+            "id": "transfer_fee",
+            "body": "A transfer fee may apply. Where it does, the sender is debited the full stated quantity, the recipient is credited the quantity less the fee, and the fee is permanently destroyed rather than paid to any party. The fee rate is published on-chain and is zero when either the sender or the recipient holds a fee exemption. Recipients should read their resulting balance rather than assume the stated quantity was delivered in full."
+        },
+        {
+            "id": "fee_policy",
+            "body": "This action changes who pays the transfer fee, or how much it is. The rate is bounded by the contract and cannot be raised beyond that ceiling. An increase to an already-active fee cannot take effect until the published notice period has elapsed. A fee cannot be brought into force while no exemption is locked."
+        },
+        {
+            "id": "exemption_lock",
+            "body": "A locked exemption cannot be deleted, and cannot be unlocked while any transfer fee is in force. This protects contracts whose internal accounting depends on receiving the full transferred amount. The signer accepts that releasing such an exemption requires first setting every transfer fee to zero."
+        },
+        {
+            "id": "receipt_only",
+            "body": "This action records information in the transaction history and changes no balance, supply, or configuration. It can be authorized only by the contract itself and notifies no other account."
+        },
+        {
+            "id": "memo_visibility",
+            "body": "The memo is stored in the public transaction history, is readable by anyone, and may be interpreted as an instruction by a receiving smart contract."
+        }
+    ],
+    "variants": [],
+    "action_results": []
+}

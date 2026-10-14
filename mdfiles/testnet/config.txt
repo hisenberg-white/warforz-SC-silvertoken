@@ -1,0 +1,57 @@
+
+Craft Cost:
+
+Miners:
+| Miner             |   Gold cost |       FT cost | 
+| ------------------- | ----------: | --------------: |
+| Common       | **13 Gold** |  **5,000 ** |    
+| Uncommon     | **22 Gold** | **18,250 ** |    
+| Rare | **30 Gold** | **23,150 ** |    
+| Epic     | **35 Gold** | **32,500 ** |    
+| Legendary           |           — |               — |        
+
+Equipments:
+| Equipment           | Gold cost | FT cost | Uses |
+| -------------- | --------: | --------: | ---: |
+| Common |     **3** | **1,800** |  125 |
+| Uncommon      |     **3** | **2,500** |  125 |
+| Rare  |     **5** | **4,500** |  125 |
+| Epic   |     **7** | **7,000** |  125 |
+| Legendary    |    **10** | **8,900** |  125 |
+
+
+| Land           |    Uses | Gold cost | FT cost | 
+| -------------- | ------: | --------: | --------:
+| **Epic**     |  **75** |         3 |       986 |  = 0.5% boost on epic miner    
+| **Legendary** | **300** |        11 |     3100 | = 0.5% boost on legendary miner              
+| **Diamond** | **600** |        21 |     5,150 | = 0.5% boost on every miners 
+
+
+
+
+Rewards Configurations:
+
+per hp cost 5ft
+
+Miners:
+
+| Rarity    | Base FT |          Gold chance |   Health |       Damage |      Cooldown |
+| --------- | ----------------: | ------------------: | -----: | -------------: | ------------: |
+|Aritfact/f2p| **27 FT**                0.5%          200              -5      2h
+| Common    | **60 FT** |              **5%** |    200 |            -10 | **3,600 sec** |
+| Uncommon  | **100 FT** |              **4%** |    200 |            -15 | **3,600 sec** |
+| Rare       | **132 FT** |              **3%** |    200 |            -20 | **3,600 sec** |
+| Epic      |**170 FT** |              **1.5%** |    200 |            -25 | **3,600 sec** |
+| Legendary | **206 FT** |              **2%** |    200 |            -30 | **3,600 sec** |
+
+Equipments:
+
+| Gear rarity | FT multiplier | Additional Gold chance |    Uses |  Cooldown |
+| ----------- |--------------: | ---------------------: | ------: | --------: |
+| None        |      **1.00×** |                    +0% |       — |         — |
+| Common      |      **1.75×** |                **+2.75%** | **125** | 3,600 sec |
+| Uncommon    |      **2.25×** |                **+1.75%** | **125** | 3,600 sec |
+| Rare        |     **3.00×** |                **+0.75%** | **125** | 3,600 sec |
+| Epic        |      **4.00×** |                **+0.75%** | **125** | 3,600 sec |
+| Legendary   |      **5.00×** |                **+0%** | **125** | 3,600 sec |
+

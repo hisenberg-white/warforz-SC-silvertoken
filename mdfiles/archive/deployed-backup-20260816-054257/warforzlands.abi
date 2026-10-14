@@ -1,0 +1,2943 @@
+{
+    "____comment":  "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version":  "eosio::abi/1.2",
+    "types":  [
+
+              ],
+    "structs":  [
+                    {
+                        "name":  "craftsnap",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "items",
+                                           "type":  "ruleitem[]"
+                                       },
+                                       {
+                                           "name":  "total_weight",
+                                           "type":  "uint32"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "modifier",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "key",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "value",
+                                           "type":  "string"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "reqft",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "quantity",
+                                           "type":  "asset"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "reqnft",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "amount",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "burn",
+                                           "type":  "bool"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "res",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "result_type",
+                                           "type":  "uint8"
+                                       },
+                                       {
+                                           "name":  "ft_amount",
+                                           "type":  "asset"
+                                       },
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "schema_name",
+                                           "type":  "name"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ruleitem",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "result_type",
+                                           "type":  "uint8"
+                                       },
+                                       {
+                                           "name":  "ft_amount",
+                                           "type":  "asset"
+                                       },
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "schema_name",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "weight",
+                                           "type":  "uint32"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "account",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "account",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "balances",
+                                           "type":  "asset[]"
+                                       },
+                                       {
+                                           "name":  "unlocked_land_slots",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "created_at",
+                                           "type":  "time_point_sec"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "activateland",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "land_slot",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "land_asset_id",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "blockdel",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "account",
+                                           "type":  "name"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "blocked",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "account",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "reason",
+                                           "type":  "string"
+                                       },
+                                       {
+                                           "name":  "blocked_at",
+                                           "type":  "time_point_sec"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "blockset",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "account",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "reason",
+                                           "type":  "string"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "claimdeps",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "asset_ids",
+                                           "type":  "uint64[]"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "config",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "maintenance_mode",
+                                           "type":  "bool"
+                                       },
+                                       {
+                                           "name":  "collection_name",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "mining_fee_pct",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "referral_rate",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "next_assoc_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "max_freeplay_lands_per_account",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "referral_cycle_depth",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "max_nft_drop_rate",
+                                           "type":  "float64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "configclear",
+                        "base":  "",
+                        "fields":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "configset",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "maintenance_mode",
+                                           "type":  "bool"
+                                       },
+                                       {
+                                           "name":  "collection_name",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "mining_fee_pct",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "referral_rate",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "max_freeplay_lands_per_account",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "referral_cycle_depth",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "max_nft_drop_rate",
+                                           "type":  "float64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "craft",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "category",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "recipe_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "asset_ids",
+                                           "type":  "uint64[]"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "craftrow",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "assoc_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "category",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "recipe_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "rng_seed",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "status",
+                                           "type":  "uint8"
+                                       },
+                                       {
+                                           "name":  "items",
+                                           "type":  "res[]"
+                                       },
+                                       {
+                                           "name":  "locked_assets",
+                                           "type":  "uint64[]"
+                                       },
+                                       {
+                                           "name":  "reserved_ft",
+                                           "type":  "asset"
+                                       },
+                                       {
+                                           "name":  "rule_snapshots",
+                                           "type":  "craftsnap[]"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "craftclaim",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "assoc_id",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "craftcount",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "count",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "craftrecipe",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "recipe_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "category",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "name",
+                                           "type":  "string"
+                                       },
+                                       {
+                                           "name":  "ft_inputs",
+                                           "type":  "reqft[]"
+                                       },
+                                       {
+                                           "name":  "nft_inputs",
+                                           "type":  "reqnft[]"
+                                       },
+                                       {
+                                           "name":  "rule_ids",
+                                           "type":  "uint64[]"
+                                       },
+                                       {
+                                           "name":  "start_ms",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "end_ms",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "gold_amount",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "craftrule",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "rule_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "items",
+                                           "type":  "ruleitem[]"
+                                       },
+                                       {
+                                           "name":  "total_weight",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "recipe_ref_count",
+                                           "type":  "uint32"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "deposit",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "asset_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "schema_name",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "collection_name",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "locked",
+                                           "type":  "bool"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "equipadd",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "miner_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "gear_id",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "equipdel",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "equiprem",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "miner_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "gear_id",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "equipset",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "equipment_type",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "rarity",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "durability_max",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "reward_boost",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "nft_drop_boost",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "compatible_miner_types",
+                                           "type":  "name[]"
+                                       },
+                                       {
+                                           "name":  "compatible_mining_types",
+                                           "type":  "uint32[]"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "equipstake",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "gear_id",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "fprotate",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "caller",
+                                           "type":  "name"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "fpseldel",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "selector_value",
+                                           "type":  "name"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "fpselector",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "selector_value",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "weight",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "rotation_period_sec",
+                                           "type":  "uint32"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "fpselset",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "selector_value",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "weight",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "rotation_period_sec",
+                                           "type":  "uint32"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "fpstart",
+                        "base":  "",
+                        "fields":  [
+
+                                   ]
+                    },
+                    {
+                        "name":  "fpstate",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "current_allowed_selector",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "window_ends_at",
+                                           "type":  "time_point_sec"
+                                       },
+                                       {
+                                           "name":  "rotation_assoc_id",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ftconfig",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "contract",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "token_symbol",
+                                           "type":  "symbol"
+                                       },
+                                       {
+                                           "name":  "display_name",
+                                           "type":  "string"
+                                       },
+                                       {
+                                           "name":  "fee_account",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "withdraw_fee_pct",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "referral_withdraw_pct",
+                                           "type":  "float64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ftconfigset",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "token_contract",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "token_symbol",
+                                           "type":  "symbol"
+                                       },
+                                       {
+                                           "name":  "display_name",
+                                           "type":  "string"
+                                       },
+                                       {
+                                           "name":  "fee_account",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "withdraw_fee_pct",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "referral_withdraw_pct",
+                                           "type":  "float64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "gear",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "asset_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "durability_remaining",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "available",
+                                           "type":  "time_point_sec"
+                                       },
+                                       {
+                                           "name":  "miner_asset_id",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "gearconf",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "equipment_type",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "rarity",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "durability_max",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "reward_boost",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "nft_drop_boost",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "compatible_miner_types",
+                                           "type":  "name[]"
+                                       },
+                                       {
+                                           "name":  "compatible_mining_types",
+                                           "type":  "uint32[]"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "goldbalance",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "amount",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "heal",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "miner_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "amount",
+                                           "type":  "uint32"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "land",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "asset_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "slot_id",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "durability_remaining",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "is_listed",
+                                           "type":  "bool"
+                                       },
+                                       {
+                                           "name":  "commission_rate",
+                                           "type":  "float64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "landconf",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "rarity",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "durability_max",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "unlimited_durability",
+                                           "type":  "bool"
+                                       },
+                                       {
+                                           "name":  "is_freeplay",
+                                           "type":  "bool"
+                                       },
+                                       {
+                                           "name":  "land_type",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "land_bonus",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "compatible_miner_types",
+                                           "type":  "name[]"
+                                       },
+                                       {
+                                           "name":  "compatible_mining_types",
+                                           "type":  "uint32[]"
+                                       },
+                                       {
+                                           "name":  "nft_drop_bonus",
+                                           "type":  "float64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "landcool",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "asset_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "available",
+                                           "type":  "time_point_sec"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "landddel",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "landdef",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "land_name",
+                                           "type":  "string"
+                                       },
+                                       {
+                                           "name":  "rarity",
+                                           "type":  "string"
+                                       },
+                                       {
+                                           "name":  "img",
+                                           "type":  "string"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "landdel",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "landdset",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "land_name",
+                                           "type":  "string"
+                                       },
+                                       {
+                                           "name":  "rarity",
+                                           "type":  "string"
+                                       },
+                                       {
+                                           "name":  "img",
+                                           "type":  "string"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "landmatch",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "land_type",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "miner_type",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "bonus_multiplier",
+                                           "type":  "float64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "landset",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "rarity",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "durability_max",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "unlimited_durability",
+                                           "type":  "bool"
+                                       },
+                                       {
+                                           "name":  "is_freeplay",
+                                           "type":  "bool"
+                                       },
+                                       {
+                                           "name":  "land_type",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "land_bonus",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "compatible_miner_types",
+                                           "type":  "name[]"
+                                       },
+                                       {
+                                           "name":  "compatible_mining_types",
+                                           "type":  "uint32[]"
+                                       },
+                                       {
+                                           "name":  "nft_drop_bonus",
+                                           "type":  "float64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "landslot",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "slot_id",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "land_asset_id",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "listland",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "land_slot",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "commission_rate",
+                                           "type":  "float64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "logcraft",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "assoc_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "recipe_id",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "logheal",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "miner_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "amount",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "cost",
+                                           "type":  "asset"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "logmine",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "miner_owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "land_owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "miner_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "gross",
+                                           "type":  "asset"
+                                       },
+                                       {
+                                           "name":  "fee",
+                                           "type":  "asset"
+                                       },
+                                       {
+                                           "name":  "commission",
+                                           "type":  "asset"
+                                       },
+                                       {
+                                           "name":  "referral",
+                                           "type":  "asset"
+                                       },
+                                       {
+                                           "name":  "net",
+                                           "type":  "asset"
+                                       },
+                                       {
+                                           "name":  "gold_dropped",
+                                           "type":  "bool"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "maintset",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "maintenance_mode",
+                                           "type":  "bool"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "matchdel",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "land_type",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "miner_type",
+                                           "type":  "name"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "matchset",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "land_type",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "miner_type",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "bonus_multiplier",
+                                           "type":  "float64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "mine",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "miner_owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "land_owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "land_slot",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "plot_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "miner_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "mining_type_id",
+                                           "type":  "uint32"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "minerow",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "assoc_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "land_owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "land_slot",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "plot_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "miner_asset_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "equipment_asset_ids",
+                                           "type":  "uint64[]"
+                                       },
+                                       {
+                                           "name":  "mining_type_id",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "commission_rate",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "health_cost",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "cooldown_sec",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "reward_rate",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "nft_drop_rate",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "land_bonus",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "match_bonus",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "equipment_reward_boost",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "mining_reward_multiplier",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "failure_chance",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "death_chance",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "land_damage",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "equipment_damage",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "decay_on_failure",
+                                           "type":  "bool"
+                                       },
+                                       {
+                                           "name":  "reserved_reward",
+                                           "type":  "asset"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "miner",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "asset_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "health",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "available",
+                                           "type":  "time_point_sec"
+                                       },
+                                       {
+                                           "name":  "plot_id",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "mineradd",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "plot_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "miner_id",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "minerconf",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "miner_type",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "rarity",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "health_max",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "base_reward_rate",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "base_nft_drop_rate",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "cooldown_sec",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "compatible_land_types",
+                                           "type":  "name[]"
+                                       },
+                                       {
+                                           "name":  "compatible_equipment_types",
+                                           "type":  "name[]"
+                                       },
+                                       {
+                                           "name":  "health_cost_per_point",
+                                           "type":  "asset"
+                                       },
+                                       {
+                                           "name":  "health_cost_per_mine",
+                                           "type":  "uint32"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "minerdel",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "minerrem",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "plot_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "miner_id",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "minerset",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "miner_type",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "rarity",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "health_max",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "base_reward_rate",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "base_nft_drop_rate",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "cooldown_sec",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "compatible_land_types",
+                                           "type":  "name[]"
+                                       },
+                                       {
+                                           "name":  "compatible_equipment_types",
+                                           "type":  "name[]"
+                                       },
+                                       {
+                                           "name":  "health_cost_per_point",
+                                           "type":  "asset"
+                                       },
+                                       {
+                                           "name":  "health_cost_per_mine",
+                                           "type":  "uint32"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "miningtype",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "mining_type_id",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "display_name",
+                                           "type":  "string"
+                                       },
+                                       {
+                                           "name":  "enabled",
+                                           "type":  "bool"
+                                       },
+                                       {
+                                           "name":  "health_cost",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "reward_multiplier",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "nft_drop_bonus",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "cooldown_sec",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "failure_chance",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "death_chance",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "land_damage_multiplier",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "equipment_damage_multiplier",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "decay_on_failure",
+                                           "type":  "bool"
+                                       },
+                                       {
+                                           "name":  "special_modifiers",
+                                           "type":  "modifier[]"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "mtypedel",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "mining_type_id",
+                                           "type":  "uint32"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "mtypeset",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "mining_type_id",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "display_name",
+                                           "type":  "string"
+                                       },
+                                       {
+                                           "name":  "enabled",
+                                           "type":  "bool"
+                                       },
+                                       {
+                                           "name":  "health_cost",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "reward_multiplier",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "nft_drop_bonus",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "cooldown_sec",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "failure_chance",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "death_chance",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "land_damage_multiplier",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "equipment_damage_multiplier",
+                                           "type":  "float64"
+                                       },
+                                       {
+                                           "name":  "decay_on_failure",
+                                           "type":  "bool"
+                                       },
+                                       {
+                                           "name":  "special_modifiers",
+                                           "type":  "modifier[]"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "nftconfig",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "collection",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "schema",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "template_ids",
+                                           "type":  "int32[]"
+                                       },
+                                       {
+                                           "name":  "display_name",
+                                           "type":  "string"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "nftconfigset",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "collection",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "schema",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "template_ids",
+                                           "type":  "int32[]"
+                                       },
+                                       {
+                                           "name":  "display_name",
+                                           "type":  "string"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "notify",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "info",
+                                           "type":  "string[]"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "occupancy",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "miner_asset_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "miner_owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "land_asset_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "land_slot",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "plot_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "active_assoc_id",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "recdel",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "category",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "recipe_id",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "receiverand",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "assoc_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "random_value",
+                                           "type":  "checksum256"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "recreqaddft",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "category",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "recipe_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "quantity",
+                                           "type":  "asset"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "recreqaddgld",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "category",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "recipe_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "amount",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "recreqaddnft",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "category",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "recipe_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "amount",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "burn",
+                                           "type":  "bool"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "recreqdel",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "category",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "recipe_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "input_type",
+                                           "type":  "uint8"
+                                       },
+                                       {
+                                           "name":  "index",
+                                           "type":  "uint32"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "recresadd",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "category",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "recipe_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "rule_id",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "recresdel",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "category",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "recipe_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "rule_id",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "recset",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "category",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "recipe_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "display_name",
+                                           "type":  "string"
+                                       },
+                                       {
+                                           "name":  "start_ms",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "end_ms",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "referrals",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "referee",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "referrer",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "set_at",
+                                           "type":  "time_point_sec"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "removeland",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "land_slot",
+                                           "type":  "uint32"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "resetuser",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "account",
+                                           "type":  "name"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "rewardpool",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "available",
+                                           "type":  "asset"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "rngassocs",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "assoc_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "assoc_type",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "context_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "request_time",
+                                           "type":  "time_point_sec"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ruledel",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "rule_id",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ruleitemadd",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "rule_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "result_type",
+                                           "type":  "uint8"
+                                       },
+                                       {
+                                           "name":  "ft_amount",
+                                           "type":  "asset"
+                                       },
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "schema_name",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "weight",
+                                           "type":  "uint32"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ruleitemdel",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "rule_id",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "index",
+                                           "type":  "uint32"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "ruleset",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "rule_id",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "setreferrer",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "account",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "referrer",
+                                           "type":  "name"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "slotconf",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "slot_index",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "enabled",
+                                           "type":  "bool"
+                                       },
+                                       {
+                                           "name":  "burn_rule",
+                                           "type":  "uint8"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "slotconfdel",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "slot_index",
+                                           "type":  "uint32"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "slotconfset",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "slot_index",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "enabled",
+                                           "type":  "bool"
+                                       },
+                                       {
+                                           "name":  "burn_rule",
+                                           "type":  "uint8"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "templateuse",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "template_id",
+                                           "type":  "int32"
+                                       },
+                                       {
+                                           "name":  "custody_count",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "tosaccept",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "account",
+                                           "type":  "name"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "tosconfig",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "version",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "tos",
+                                           "type":  "string"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "tosdel",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "version",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "tosset",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "version",
+                                           "type":  "uint64"
+                                       },
+                                       {
+                                           "name":  "tos",
+                                           "type":  "string"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "tosuser",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "account",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "version",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "unlistland",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "land_slot",
+                                           "type":  "uint32"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "unlockslot",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "slot_index",
+                                           "type":  "uint32"
+                                       },
+                                       {
+                                           "name":  "asset_id",
+                                           "type":  "uint64"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "wdrawft",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "quantity",
+                                           "type":  "asset"
+                                       },
+                                       {
+                                           "name":  "fee",
+                                           "type":  "asset"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "wdrawgold",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "amount",
+                                           "type":  "uint32"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "wdrawminer",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "owner",
+                                           "type":  "name"
+                                       },
+                                       {
+                                           "name":  "asset_ids",
+                                           "type":  "uint64[]"
+                                       }
+                                   ]
+                    },
+                    {
+                        "name":  "wipeall",
+                        "base":  "",
+                        "fields":  [
+                                       {
+                                           "name":  "recipe_scopes",
+                                           "type":  "name[]"
+                                       }
+                                   ]
+                    }
+                ],
+    "actions":  [
+                    {
+                        "name":  "activateland",
+                        "type":  "activateland",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "blockdel",
+                        "type":  "blockdel",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "blockset",
+                        "type":  "blockset",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "claimdeps",
+                        "type":  "claimdeps",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "configclear",
+                        "type":  "configclear",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "configset",
+                        "type":  "configset",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "craft",
+                        "type":  "craft",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "craftclaim",
+                        "type":  "craftclaim",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "equipadd",
+                        "type":  "equipadd",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "equipdel",
+                        "type":  "equipdel",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "equiprem",
+                        "type":  "equiprem",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "equipset",
+                        "type":  "equipset",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "equipstake",
+                        "type":  "equipstake",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "fprotate",
+                        "type":  "fprotate",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "fpseldel",
+                        "type":  "fpseldel",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "fpselset",
+                        "type":  "fpselset",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "fpstart",
+                        "type":  "fpstart",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "ftconfigset",
+                        "type":  "ftconfigset",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "heal",
+                        "type":  "heal",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "landddel",
+                        "type":  "landddel",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "landdel",
+                        "type":  "landdel",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "landdset",
+                        "type":  "landdset",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "landset",
+                        "type":  "landset",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "listland",
+                        "type":  "listland",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "logcraft",
+                        "type":  "logcraft",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "logheal",
+                        "type":  "logheal",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "logmine",
+                        "type":  "logmine",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "maintset",
+                        "type":  "maintset",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "matchdel",
+                        "type":  "matchdel",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "matchset",
+                        "type":  "matchset",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "mine",
+                        "type":  "mine",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "mineradd",
+                        "type":  "mineradd",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "minerdel",
+                        "type":  "minerdel",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "minerrem",
+                        "type":  "minerrem",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "minerset",
+                        "type":  "minerset",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "mtypedel",
+                        "type":  "mtypedel",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "mtypeset",
+                        "type":  "mtypeset",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "nftconfigset",
+                        "type":  "nftconfigset",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "notify",
+                        "type":  "notify",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "recdel",
+                        "type":  "recdel",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "receiverand",
+                        "type":  "receiverand",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "recreqaddft",
+                        "type":  "recreqaddft",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "recreqaddgld",
+                        "type":  "recreqaddgld",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "recreqaddnft",
+                        "type":  "recreqaddnft",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "recreqdel",
+                        "type":  "recreqdel",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "recresadd",
+                        "type":  "recresadd",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "recresdel",
+                        "type":  "recresdel",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "recset",
+                        "type":  "recset",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "removeland",
+                        "type":  "removeland",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "resetuser",
+                        "type":  "resetuser",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "ruledel",
+                        "type":  "ruledel",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "ruleitemadd",
+                        "type":  "ruleitemadd",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "ruleitemdel",
+                        "type":  "ruleitemdel",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "ruleset",
+                        "type":  "ruleset",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "setreferrer",
+                        "type":  "setreferrer",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "slotconfdel",
+                        "type":  "slotconfdel",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "slotconfset",
+                        "type":  "slotconfset",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "tosaccept",
+                        "type":  "tosaccept",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "tosdel",
+                        "type":  "tosdel",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "tosset",
+                        "type":  "tosset",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "unlistland",
+                        "type":  "unlistland",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "unlockslot",
+                        "type":  "unlockslot",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "wdrawft",
+                        "type":  "wdrawft",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "wdrawgold",
+                        "type":  "wdrawgold",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "wdrawminer",
+                        "type":  "wdrawminer",
+                        "ricardian_contract":  ""
+                    },
+                    {
+                        "name":  "wipeall",
+                        "type":  "wipeall",
+                        "ricardian_contract":  ""
+                    }
+                ],
+    "tables":  [
+                   {
+                       "name":  "accounts",
+                       "type":  "account",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "blocked",
+                       "type":  "blocked",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "config",
+                       "type":  "config",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "craftcounts",
+                       "type":  "craftcount",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "craftrecipes",
+                       "type":  "craftrecipe",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "craftrules",
+                       "type":  "craftrule",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "crafts",
+                       "type":  "craftrow",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "deposits",
+                       "type":  "deposit",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "equipconf",
+                       "type":  "gearconf",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "equipment",
+                       "type":  "gear",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "fpselectors",
+                       "type":  "fpselector",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "freeplaystat",
+                       "type":  "fpstate",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "ftconfig",
+                       "type":  "ftconfig",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "goldbalance",
+                       "type":  "goldbalance",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "landconf",
+                       "type":  "landconf",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "landcool",
+                       "type":  "landcool",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "landdef",
+                       "type":  "landdef",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "landminmatch",
+                       "type":  "landmatch",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "lands",
+                       "type":  "land",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "landslots",
+                       "type":  "landslot",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "minerconf",
+                       "type":  "minerconf",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "miners",
+                       "type":  "miner",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "mines",
+                       "type":  "minerow",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "miningtypes",
+                       "type":  "miningtype",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "nftconfig",
+                       "type":  "nftconfig",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "occupancy",
+                       "type":  "occupancy",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "referrals",
+                       "type":  "referrals",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "rewardpool",
+                       "type":  "rewardpool",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "rngassocs",
+                       "type":  "rngassocs",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "slotconf",
+                       "type":  "slotconf",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "templateuse",
+                       "type":  "templateuse",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "tosconfig",
+                       "type":  "tosconfig",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   },
+                   {
+                       "name":  "tosuser",
+                       "type":  "tosuser",
+                       "index_type":  "i64",
+                       "key_names":  [
+
+                                     ],
+                       "key_types":  [
+
+                                     ]
+                   }
+               ],
+    "ricardian_clauses":  [
+
+                          ],
+    "variants":  [
+
+                 ],
+    "action_results":  [
+
+                       ]
+}

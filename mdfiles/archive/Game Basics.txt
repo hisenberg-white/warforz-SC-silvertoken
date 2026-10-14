@@ -1,0 +1,60 @@
+Game Basics:
+slot(where land is staked)
+land (where miners are staked/send to mine)
+equipments/boosters (it will be equipped with miners to boost the mining)
+Currency - one NFT and another FT( FT is tokens that will be mined and NFT is rare drop that can be get with rng during the mining)
+
+currency configurations should be able to done by admin account like which nft template to be considered currency and which ft contract address to be considered ft
+
+Game mechanics:
+Player will signup/signin with his wax wallet( signup url can include referral link)
+player will get one slot unlocked by default
+player can put any lands on that slot.
+and to unlock more slot they need to activate/burn the slot nft. each index slot will have its own nft, for example if user wants to unlock 2nd slot he needs to buy the nft templated that will unlock that slot. meaning that template cant unlock another slot. and another thing user cant unlock 3 slot if he has not unlocked 1st and 2nd slot, and same for other. By default there will be 5 slots per account at the initial. In future there might be more slots that needs nfts to add on that account and again that slot needs to be unlocked with nfts. and these nfts are to be burned once activated.
+
+And these nfts configurations should be done by admin
+
+
+Land nft:
+
+there will be many rarities land nfts for now there are upto legendary
+once the land is activated on the slot the nft will be burned. user can remove/destroy that land after activation but the land nft will not return.
+Land Nft will have durabilities like how many time the mine can be done.
+land NFT will have rng boosters like % mining boost for matching the exact miner
+some land(Free to play) might have unlimited mine time but it will have rng which miner can mine on that land. only the miner can mine on that land else it cant be mined by other land.
+All these nfts configurations should be done by admin
+
+equipments/boosters  NFT:
+
+each miners will have its default mining rewards, and to boost the rewards there will be equipments nfts comes in place. there will be multiple rarities equipments with their own boost the mining of gold(nft) and silver(ft).
+boster will also have durabilities like how many times the equipments can be used to until its damaged(burned).
+booster nfts are same as land once its equipped it cant be unstaked, as it will be burned.
+
+All there nfts configurations should be done by admin account
+
+
+Miner NFTs:
+
+Miner nft require land to mine on. While mining miners will have their own mining reward base rate. 
+miner will have health bar, each mine will cost health lost which can be healed with silver(ft) token.
+miner can equip boosters to boost their base rewards.
+
+All these nfts configurations should be done by admin account
+
+
+Game actions/features:
+
+User select the land there would be list of miners available and user can equip the booster and send to mine. And if the reward is gold(nft) then add a animation or video which can be skipped.
+
+User can craft NFTS with FT and NFT ingame inside the smithy.
+all these should be configurable by admin account.
+
+And also include a mining type as there will be dangerous mine too in future which will be on rng basis if unsucessfull there might be lost of miner too or make the health 0 of the miner these should be configurable. for now normal mining. later admin account can add mining type dangerous so that admin dont have to change the code to implement it.
+
+
+
+
+
+
+
+

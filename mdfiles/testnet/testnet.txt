@@ -1,0 +1,19 @@
+{"msg": "succeeded", "keys": {"active_key": {"public": "EOS8Dp26CaNdJTEWDpqsM3fcPvYpGSNnvsYTrgtoXs6brWtMpCegq", "private": "5KPrZFUQfLZM2k7saiLrwv4QmgyiAwVJtshvGTJWnY4GpmgWxxa"}, "owner_key": {"public": "EOS7i1oLYBvh4aMbPAEpr7K6a9iMiLfxbvZ2QP2w1S9L3VkL8bxTp", "private": "5JVW8BEkxG6Hgjcd5F7kg35xAgvCbBa5XN2RgB1aaWU7tm6xkR1"}}, "account": "warforzlands"}
+
+
+
+cleos
+acer@Nitro-V15:~$ cleos wallet create --to-console
+Creating wallet: default
+Save password to use in the future to unlock this wallet.
+Without password imported keys will not be retrievable.
+"PW5KR3JS34CRguCpcPRc8oAn1TBqvNcs9JxSMJFyfSxir8Ciap9Uw"
+acer@Nitro-V15:~$
+
+
+
+
+{"msg": "succeeded", "keys": {"active_key": {"public": "EOS8jDeFFtVGvZzDKnHcjV8HDhSW24V7ufZdMXJP9k31EcYEKKfYK", "private": "5JUEyKrf5V2ch3UffjhBncr2Chje8cAUxpJES67qRXnRPP4SaQE"}, "owner_key": {"public": "EOS4yovinACuY7grD6kfRLGVBxajwr5Dak1UApAfiJb18AULafAMW", "private": "5JcLYUg69xJ7QGBweSicYTk2dniWodzHcgz4NRGL9c3ms7brMqf"}}, "account": "testingwarfo"}
+
+
+{"msg": "succeeded", "keys": {"active_key": {"public": "EOS7E9JSmXa7BaK8KKo8RpfuoMrfxPTuHeDPv9HWabzebWhj8kdqM", "private": "5J6Sxziiaqp6cBhi5BQmKZNMJRhV8VuvqCb9QhHaRE3qNCcBue5"}, "owner_key": {"public": "EOS5uRu2DxNast9fV11REzGRJgbF85xbqujBaGqpCWDMVv7AVd5Pu", "private": "5J4vvR3PHSKfuaDYspbWe9wZem33wgntEUSgeEXXeTHwmiMjpSm"}}, "account": "warforzvault"}
